@@ -2,13 +2,17 @@ body {
     background: #E5E5E5;
 }
 
+img {
+    width: 100%;
+}
+
 .carousel {
     position: relative;
     z-index: 1;
 }
 
 #contenedor-general {
-    width: 90%;
+    margin: 0 auto;
     margin-top: -30px;
     background-color: #fff;
     position: relative;
@@ -16,10 +20,36 @@ body {
     border-radius: 0.5em;
 }
 
+#contenedor-general > .row > .col {
+    padding: 5em 8em;
+}
+
+/*#contenedor-general > .row i {
+    font-size: 5em;
+}*/
+
 #navegador {
     position: fixed;
     z-index: 1000;
     background: none;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+#navegador.nav-alternative {
+    background: #fff;
+    box-shadow: 0 0 1em #000;
+    transition: 0.5s;
+}
+
+#navegador.nav-alternative a {
+    color: #777;
+    transition: 0.5s;
+}
+
+#navegador.nav-alternative .dropdown-button.active {
+    color: #e91e63;
+    transition: 0.5s;
 }
 
 .silders, .carousel .item, .carousel .carousel-inner {
