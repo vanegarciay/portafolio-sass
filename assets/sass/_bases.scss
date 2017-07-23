@@ -1,10 +1,23 @@
 
 body {
     background: #E5E5E5;
+    font-family: $font-sans;
+    color: $main_text_color;
 }
 
 img {
     width: 100%;
+}
+
+h2, h3, h4 {
+    font-weight: bold;
+    font-family: $font-serif;
+    color: #4B5665;
+}
+
+.main-text {
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
 .btn {
@@ -35,7 +48,7 @@ img {
         bottom: 20vh;
 
         h1 {
-            font-family: "Roboto","Helvetica","Arial",sans-serif;
+            font-family: $font-sans;
             font-size: 4.4em;
             line-height: 1.6em;
         }
@@ -43,7 +56,7 @@ img {
         p {
             display: block;
             margin: 10px 0 60px;
-            font-family: "Roboto Slab","Times New Roman",serif;
+            font-family: $font-serif;
             font-size: 1.3em;
             line-height: 0.9em;
         }
@@ -61,6 +74,11 @@ img {
 
 #contenedor-general > .row > .col {
     padding: 5em 8em;
+
+    &.bottom-cero {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 
 #navegador {
@@ -76,16 +94,20 @@ img {
     }
 
     .dropdown-content.active {
+        border-radius: 4px;
+
         li {
             padding: 0.2em;
             min-height: auto;
+            overflow: visible;
             
             a {
-                padding: 0.2em;
+                padding: 0.6em;
+                overflow: visible;
             }
 
             a:hover {
-                background-color: $main-color;
+                background-color: $main-color-hover;
                 @include buttonEffect();
             }
         }
@@ -96,7 +118,7 @@ img {
             
             i.fa {
                 font-size: 1.4em;
-                margin-right: 7px;
+                margin: 0 7px;
             }
         }
 
@@ -125,6 +147,10 @@ img {
         color: $main_color;
         transition: 0.5s;
     }
+
+    a.btn {
+        color: #fff;
+    }
 }
 
 .carousel {
@@ -139,14 +165,39 @@ img {
     }
 }
 
+
+i.material-icons.icon-highlight {
+    font-size: 5em;
+
+    &.icon-color-1 {
+        color: $main_color;
+    }
+    &.icon-color-2 {
+        color: #00BCD4;
+    }
+    &.icon-color-3 {
+        color: #4CAF50;
+    }
+}
+
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+}
+
+.container .row.parallax-section {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 .second_section {
     background-image: $background_image;
-    height: 120vh;
+    @include invertColor();
 }
 
 .ten_section {
     background-image: $background_image;
-    height: 100vh;
 }
 
 .about {

@@ -1,5 +1,16 @@
 @mixin buttonEffect() {
     border-radius: 4px;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
     color: #fff;
+    text-decoration: none;
+    overflow: visible;
+    transition: all 150ms linear;
+}
+
+@mixin invertColor() {
+    color: #fff;
+
+    h1, h2, h3, h4 {
+        color: #fff;
+    }
 }

@@ -1,8 +1,19 @@
 body {
-  background: #E5E5E5; }
+  background: #E5E5E5;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: #B4B4B4; }
 
 img {
   width: 100%; }
+
+h2, h3, h4 {
+  font-weight: bold;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  color: #4B5665; }
+
+.main-text {
+  font-size: 1.2em;
+  font-weight: 300; }
 
 .btn {
   background-color: #E91E63;
@@ -23,13 +34,13 @@ img {
   .carousel .carousel-caption {
     bottom: 20vh; }
     .carousel .carousel-caption h1 {
-      font-family: "Roboto","Helvetica","Arial",sans-serif;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
       font-size: 4.4em;
       line-height: 1.6em; }
     .carousel .carousel-caption p {
       display: block;
       margin: 10px 0 60px;
-      font-family: "Roboto Slab","Times New Roman",serif;
+      font-family: "Roboto Slab", "Times New Roman", serif;
       font-size: 1.3em;
       line-height: 0.9em; }
 
@@ -43,6 +54,9 @@ img {
 
 #contenedor-general > .row > .col {
   padding: 5em 8em; }
+  #contenedor-general > .row > .col.bottom-cero {
+    padding-bottom: 0;
+    margin-bottom: 0; }
 
 #navegador {
   position: fixed;
@@ -53,27 +67,37 @@ img {
   #navegador i.material-icons {
     font-size: 1.2em;
     margin: 0 7px; }
-  #navegador .dropdown-content.active li {
-    padding: 0.2em;
-    min-height: auto; }
-    #navegador .dropdown-content.active li a {
-      padding: 0.2em; }
-    #navegador .dropdown-content.active li a:hover {
-      background-color: #E91E63;
+  #navegador .dropdown-content.active {
+    border-radius: 4px; }
+    #navegador .dropdown-content.active li {
+      padding: 0.2em;
+      min-height: auto;
+      overflow: visible; }
+      #navegador .dropdown-content.active li a {
+        padding: 0.6em;
+        overflow: visible; }
+      #navegador .dropdown-content.active li a:hover {
+        background-color: #E91E63;
+        border-radius: 4px;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        text-decoration: none;
+        overflow: visible;
+        transition: all 150ms linear; }
+    #navegador .dropdown-content.active a {
+      font-size: 0.8em;
+      color: #333; }
+      #navegador .dropdown-content.active a i.fa {
+        font-size: 1.4em;
+        margin: 0 7px; }
+    #navegador .dropdown-content.active#dropdown2 li a:hover {
+      background-color: #9C27B0;
       border-radius: 4px;
-      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-      color: #fff; }
-  #navegador .dropdown-content.active a {
-    font-size: 0.8em;
-    color: #333; }
-    #navegador .dropdown-content.active a i.fa {
-      font-size: 1.4em;
-      margin-right: 7px; }
-  #navegador .dropdown-content.active#dropdown2 li a:hover {
-    background-color: #9C27B0;
-    border-radius: 4px;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-    color: #fff; }
+      box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      text-decoration: none;
+      overflow: visible;
+      transition: all 150ms linear; }
 
 #navegador.nav-alternative {
   background: #fff;
@@ -85,6 +109,8 @@ img {
   #navegador.nav-alternative .dropdown-button.active {
     color: #E91E63;
     transition: 0.5s; }
+  #navegador.nav-alternative a.btn {
+    color: #fff; }
 
 .carousel {
   height: 90vh; }
@@ -93,13 +119,32 @@ img {
   .carousel .item img {
     height: 100%; }
 
+i.material-icons.icon-highlight {
+  font-size: 5em; }
+  i.material-icons.icon-highlight.icon-color-1 {
+    color: #E91E63; }
+  i.material-icons.icon-highlight.icon-color-2 {
+    color: #00BCD4; }
+  i.material-icons.icon-highlight.icon-color-3 {
+    color: #4CAF50; }
+
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative; }
+
+.container .row.parallax-section {
+  margin-left: -15px;
+  margin-right: -15px; }
+
 .second_section {
   background-image: url("../img/img_city.jpg");
-  height: 120vh; }
+  color: #fff; }
+  .second_section h1, .second_section h2, .second_section h3, .second_section h4 {
+    color: #fff; }
 
 .ten_section {
-  background-image: url("../img/img_city.jpg");
-  height: 100vh; }
+  background-image: url("../img/img_city.jpg"); }
 
 .about {
   background-image: url("../img/about.jpg");
