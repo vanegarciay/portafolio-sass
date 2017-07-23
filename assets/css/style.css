@@ -69,3 +69,16 @@ img {
 .second_section img {
     width: 100%;
 }
+
+.about {
+    background-image: url("../img/about.jpg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.about_section {
+    background-image: url("../img/img_city.jpg");
+    height: 100%;
+    width: 100%;
+}*/
