@@ -7,6 +7,13 @@
     transition: all 150ms linear;
 }
 
+@mixin withoutMargin() {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 @mixin invertColor() {
     color: #fff;
 

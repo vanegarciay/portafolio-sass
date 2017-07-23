@@ -3,6 +3,7 @@ body {
     background: #E5E5E5;
     font-family: $font-sans;
     color: $main_text_color;
+    font-weight: 300;
 }
 
 img {
@@ -13,6 +14,10 @@ h2, h3, h4 {
     font-weight: bold;
     font-family: $font-serif;
     color: #4B5665;
+}
+
+h4 {
+    font-size: 1.2em;
 }
 
 .main-text {
@@ -70,6 +75,9 @@ h2, h3, h4 {
     position: relative;
     z-index: 2;
     border-radius: 0.5em;
+    width: 95%;
+    max-width: none;
+    box-shadow: 0 1px 1em #777;
 }
 
 #contenedor-general > .row > .col {
@@ -79,6 +87,10 @@ h2, h3, h4 {
         padding-bottom: 0;
         margin-bottom: 0;
     }
+}
+
+#contenedor-general > .products {
+    padding: 5em 8em;
 }
 
 #navegador {
@@ -187,8 +199,7 @@ i.material-icons.icon-highlight {
 }
 
 .container .row.parallax-section {
-    margin-left: -15px;
-    margin-right: -15px;
+    @include withoutMargin();
 }
 
 .second_section {
@@ -205,4 +216,36 @@ i.material-icons.icon-highlight {
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.products {
+    background-color: #EFEFEF;
+    @include withoutMargin();
+
+    .section_products {
+        .single_product {
+            background-color: #fff;
+            margin: 10px;
+            padding: 30px;
+            box-shadow: 0 1px 3px #888;
+            border-radius: 4px;
+
+            a {
+                color: $main_color;
+                font-weight: 500;
+                font-size: 0.9em;
+            }
+
+            img {
+                margin-top: -50px;
+                margin-bottom: 2em;
+                @include buttonEffect();
+            }
+
+            img:hover {
+                margin-top: -60px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
