@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio Sass</title>
+    <!-- Zoom desde mobile-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Archivo css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="img/logo_new.png" type="image/gif">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="#!"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    <nav id="navegador">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Hestia Pro</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">cloud</i>FEATURES<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">unfold_more</i>SECTIONS<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide silders" data-ride="carousel">
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="assets/img/img_slider_1.jpg">
+                <div class="carousel-caption">
+                    <h1>Slick Material Design</h1>
+                    <p>Beautiful, Elegantly Coded, one-page Wordpress Theme for bussiness</p>
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    See More
+                    </button>
+                </div>
+            </div>
+            <div class="item active">
+                <img src="assets/img/img_slider_2.jpg">
+                <div class="carousel-caption">
+                    <h1>Simple & Awesome</h1>
+                    <p>Beatiful, Elegantly Coded</p>
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    See More
+                    </button>
+                </div>
+            </div>
+        </div>
+      <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container" id="contenedor-general">
+        <div class="row">
+            <div class="offset-m2 col m7">
+                <p>Nullam blandit gravida viverra. Etiam turpis erat, sagittis sit amet felis non, porta porta justo. Integer ornare nibh nulla, id pulvinar metus cursus semper. Vivamus dictum pellentesque mi. Vivamus ipsum tellus, mattis non ex sed, semper sodales ligula. Vivamus luctus lorem.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m12">
+                <div class="col m4 center-align">
+                    <i class="material-icons">apps</i>
+                    <h1>Responsive</h1>
+                    <p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col m4 center-align">
+                    <i class="material-icons">list</i>
+                    <h1>Quality</h1>
+                    <p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col m4 center-align">
+                    <i class="material-icons">dehaze</i>
+                    <h1>Support</h1>
+                    <p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m12 second_section">
+                <div class="col m6">
+                    <h1>Who are we now</h1>
+                    <p>Ideate integrate food-truck agile ideate thinker-maker-doer user story intuitive hacker integrate workflow Steve Jobs. Steve Jobs pair programming food-truck big data long shadow SpaceTeam agile agile affordances.
+                    User centered design food-truck experiential minimum viable product human-centered design prototype viral quantitative vs. qualitative.</p>
+                </div>
+                <div class="col m6">
+                    <img src="assets/img/img_tablet.png">
+                </div>
+                <div class="row">
+                    <div class="col m12 center-align">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pYOJNOJfJxU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m12 center-align">
+                <h1>Products</h1>
+                <p>Showcase your products in this beautiful shop section.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m12">
+                <div class="col m3 center-align">
+                    <img src="assets/img/img_product_1.png">
+                    <a href="#">FASHION</a>
+                    <h1>Embroidered Dress</h1>
+                    <p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</p>
+                    <p class="left">£100.00</p>
+                    <i class="material-icons right">shopping_cart</i>
+                </div>
+                <div class="col m3 center-align">
+                    <img src="assets/img/img_product_2.png">
+                    <a href="#">POPULAR</a>
+                    <h1>Printed Blue T-Shirt</h1>
+                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold.</p>
+                    <p class="left">£35.00</p>
+                    <i class="material-icons right">shopping_cart</i>
+                </div>
+                <div class="col m3 center-align">
+                    <img src="assets/img/img_product_3.png">
+                    <a href="#">TRENDING</a>
+                    <h1>Embroidered Blouse</h1>
+                    <p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</p>
+                    <p class="left">£45.00</p>
+                    <i class="material-icons right">shopping_cart</i>
+                </div>
+                <div class="col m3 center-align">
+                    <img src="assets/img/img_product_4.jpg">
+                    <a href="#">FASHION</a>
+                    <h1>Trucker Jacket</h1>
+                    <p>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid up on.</p>
+                    <p class="left">£110.00</p>
+                    <i class="material-icons right">shopping_cart</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m12 center-align">
+                <h1>Portfolio</h1>
+                <p>Showcase your work effectively and in an attractive form that your prospective clients will love.</p>
+            </div>
+            <div class="row">
+                <div class="col m4">
+                    <img src="assets/img/img_portafolio_1.jpg">
+                </div>
+                <div class="col m4">
+                    <img src="assets/img/img_portafolio_2.jpg">
+                </div>
+                <div class="col m4">
+                    <img src="assets/img/img_portafolio_3.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <img src="assets/img/img_portafolio_4.jpg">
+                </div>
+                <div class="col m6">
+                    <img src="assets/img/img_portafolio_5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- CDN Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+        <!-- Fontawesome -->
+        <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+        <!-- Archivo js-->
+        <script src="assets/js/main.js"></script>
+</body>
+</html>

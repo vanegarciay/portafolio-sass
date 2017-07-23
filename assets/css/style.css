@@ -1,0 +1,41 @@
+body {
+    background: #E5E5E5;
+}
+
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+
+#contenedor-general {
+    width: 90%;
+    margin-top: -30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    border-radius: 0.5em;
+}
+
+#navegador {
+    position: fixed;
+    z-index: 1000;
+    background: none;
+}
+
+.silders, .carousel .item, .carousel .carousel-inner {
+    height: 90vh;
+}
+
+.carousel .item img {
+    height: 100%;
+    width: 100%;
+}
+
+.second_section {
+    background-image: url("../img/img_city.jpg");
+    height: 130vh;
+}
+
+.second_section img {
+    width: 100%;
+}
