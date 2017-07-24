@@ -201,10 +201,41 @@ i.material-icons.icon-highlight {
 .second_section {
     background-image: $background_image;
     @include invertColor();
+    iframe {
+        width: 60%;
+        border: 1px solid white;
+    }
 }
 
 .ten_section {
     background-image: $background_image;
+    @include invertColor();
+
+    & .formulario {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+
+        .title_contact {
+            background-color: $main_color;
+            border-radius: 10px;
+            position: relative;
+            margin-top: -40px;
+
+            h1 {
+                font-size: 1em;
+                padding:10px;
+            }
+        }
+    }
+
+    & i {
+        font-size: 3em;
+    }
+
+    & input {
+        border-bottom: none;
+    }
 }
 
 .about {
@@ -212,6 +243,31 @@ i.material-icons.icon-highlight {
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
+    @include invertColor();
+
+    .email {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 7px;
+        i {
+            color: #4b5665;
+            padding-top: 10px;
+            padding-right: 5px;
+        }
+        button {
+            width: 30%;
+            padding: 10px;
+            font-size: 1em;
+        }
+        input {
+            width: 50%;
+            border-bottom: none;
+            padding-top: 5px;
+        }
+        input::placeholder {
+            font-size: 1.4em;
+        }
+    }
 }
 
 #back_gris {
@@ -251,6 +307,7 @@ i.material-icons.icon-highlight {
 }
 
 #portfolio {
+    margin-bottom: -190px;
     .img-hover {
         position: relative;
     }
@@ -345,3 +402,41 @@ strong {
     }
 }
 
+.blog {
+    img {
+        @include buttonEffect();
+        margin-bottom: 25px;
+        margin-top: -90px;
+    }
+
+    & a {
+        color: blue;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    & .blog:first-child a{
+        color: $main_text_color;
+    }
+}
+
+footer {
+    background-color: #312F35;
+    @include withoutMargin();
+
+    i, h2 {
+        @include invertColor();
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    a {
+        font-size: 0.8em
+    }
+
+    img {
+        @include buttonEffect();
+    }
+}
