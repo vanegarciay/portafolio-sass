@@ -161,23 +161,23 @@ i.material-icons.icon-highlight {
   background-repeat: no-repeat;
   background-size: cover; }
 
-#products {
+#back_gris {
   background-color: #EFEFEF;
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 0;
   margin-bottom: 0; }
-  #products .section_products .single_product {
+  #back_gris .section_products .single_product {
     background-color: #fff;
     margin: 10px;
     padding: 30px;
     box-shadow: 0 1px 3px #888;
     border-radius: 4px; }
-    #products .section_products .single_product a {
+    #back_gris .section_products .single_product a {
       color: #E91E63;
       font-weight: 500;
       font-size: 0.9em; }
-    #products .section_products .single_product img {
+    #back_gris .section_products .single_product img {
       margin-top: -50px;
       margin-bottom: 2em;
       border-radius: 4px;
@@ -186,7 +186,7 @@ i.material-icons.icon-highlight {
       text-decoration: none;
       overflow: visible;
       transition: all 150ms linear; }
-    #products .section_products .single_product img:hover {
+    #back_gris .section_products .single_product img:hover {
       margin-top: -60px;
       margin-bottom: 20px; }
 
@@ -246,5 +246,30 @@ i.material-icons.icon-highlight {
   color: #55ACEE; }
 .social-icons .fa-github {
   color: #333; }
+
+.col_treasure {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
+  overflow: visible;
+  transition: all 150ms linear;
+  color: #B4B4B4; }
+
+strong {
+  color: #4B5665; }
+
+.clients img {
+  width: 30%;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
+  overflow: visible;
+  transition: all 150ms linear; }
+.clients h3 {
+  font-size: 1.2em; }
+.clients h4 {
+  font-size: 0.9em; }
 
 /*# sourceMappingURL=style.css.map */

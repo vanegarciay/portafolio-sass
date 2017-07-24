@@ -214,7 +214,7 @@ i.material-icons.icon-highlight {
     background-size: cover;
 }
 
-#products {
+#back_gris {
     background-color: #EFEFEF;
     @include withoutMargin();
 
@@ -317,3 +317,31 @@ i.material-icons.icon-highlight {
         color: #333;
     }
 }
+
+.col_treasure {
+    background: #fff;
+    @include buttonEffect();
+    color: $main_text_color;
+}
+
+strong {
+    color: #4B5665;
+}
+
+.clients {
+    img {
+        width: 30%;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        text-decoration: none;
+        overflow: visible;
+        transition: all 150ms linear;
+    }
+    & h3 {
+        font-size: 1.2em;
+    }
+    & h4 {
+        font-size: 0.9em;
+    }
+}
+
