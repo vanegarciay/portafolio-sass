@@ -23,6 +23,7 @@ h4 {
 .main-text {
     font-size: 1.2em;
     font-weight: 300;
+    padding: 1em;
 }
 
 .btn {
@@ -80,13 +81,8 @@ h4 {
     box-shadow: 0 1px 1em #777;
 }
 
-#contenedor-general > .row > .col {
-    padding: 5em 8em;
-
-    &.bottom-cero {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+.bottom-space {
+    padding-bottom: 3.5em !important;
 }
 
 #navegador {
@@ -218,13 +214,12 @@ i.material-icons.icon-highlight {
 
         .title_contact {
             background-color: $main_color;
-            border-radius: 10px;
             position: relative;
             margin-top: -40px;
+            @include buttonEffect();
 
-            h1 {
-                font-size: 1em;
-                padding:10px;
+            h4 {
+                padding:1em;
             }
         }
     }
@@ -270,7 +265,7 @@ i.material-icons.icon-highlight {
     }
 }
 
-#back_gris {
+.back_gris {
     background-color: #EFEFEF;
     @include withoutMargin();
 
@@ -306,8 +301,15 @@ i.material-icons.icon-highlight {
     padding: 5em 7em;
 }
 
+@media (max-width: 380px) {
+    .contenedor-interno {
+        padding: 2em 2em;
+        min-width: 220px;
+    }
+}
+
 #portfolio {
-    margin-bottom: -190px;
+    
     .img-hover {
         position: relative;
     }
@@ -381,6 +383,10 @@ i.material-icons.icon-highlight {
     color: $main_text_color;
 }
 
+.row .col.col-plan {
+    padding: 10px;
+}
+
 strong {
     color: #4B5665;
 }
@@ -406,7 +412,6 @@ strong {
     img {
         @include buttonEffect();
         margin-bottom: 25px;
-        margin-top: -90px;
     }
 
     & a {
