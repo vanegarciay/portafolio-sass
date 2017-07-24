@@ -195,12 +195,30 @@ i.material-icons.icon-highlight {
 }
 
 .second_section {
+    position: relative;
+    z-index: 1;
     background-image: $background_image;
     @include invertColor();
+
     iframe {
         width: 60%;
         border: 1px solid white;
     }
+}
+
+.parallax-section-aux {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+.front-position {
+    position: relative;
+    z-index: 999;
 }
 
 .ten_section {
@@ -438,10 +456,25 @@ footer {
     }
 
     a {
-        font-size: 0.8em
+        font-size: 0.8em;
+        word-break: break-all;
+        color: $main_text_color;
     }
 
     img {
         @include buttonEffect();
+    }
+
+    hr {
+        height: 1px;
+    }
+
+    .menu-footer {
+        font-weight: bold;
+        
+        a {
+            padding: 1em;
+            color: #fff;
+        }
     }
 }
